@@ -1,0 +1,253 @@
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  background-color: #4e4e4e;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+}
+
+.company {
+  font-weight: bold;
+  font-size: 18px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 46px;
+  margin-left: 0;
+  padding: 0;
+}
+nav li:nth-of-type(3) {
+  margin-right: 0px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-item {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.nav-link.nav-link--disabled {
+  cursor: not-allowed;
+}
+.overlay {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.main-background {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background-size: cover;
+  background-image: url(tapeta.jpg);
+  align-items: center;
+  display: flex;
+}
+
+.main-title {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: left;
+}
+.main-title-first {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 62px;
+}
+.main-title-second {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 47px;
+}
+
+.main-button {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 9px 58.5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.specialist-container {
+  height: 100%;
+  padding-bottom: 68px;
+}
+.specialists-header {
+  margin-top: 0px;
+  padding-top: 51px;
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 68px;
+}
+
+.specialist-image {
+  height: 197px;
+  width: 197px;
+  border-radius: 50%;
+}
+
+.specialist-image.left-image {
+  margin-right: 60px;
+}
+
+.specialist-image.right-image {
+  margin-left: 60px;
+}
+
+.specialist-info {
+  margin-top: 0;
+}
+.specialist {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+.specialist:nth-child(odd) {
+  text-align: left;
+  margin-bottom: 68px;
+}
+.specialist:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.offer {
+  background-color: #405d78;
+  height: 100%;
+  padding-bottom: 64px;
+}
+.offer-header {
+  color: white;
+  font-weight: 700;
+  display: flex;
+  font-size: 36px;
+  padding-top: 50px;
+  padding-bottom: 82px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.offer-container {
+  display: grid;
+  grid-template-columns: 198px 198px 198px;
+  grid-template-rows: 193px 193px;
+  justify-content: center;
+  grid-gap: 63px;
+}
+.offer-box {
+  display: flex;
+  width: 198px;
+  height: 193px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.offer-box:hover {
+  animation-name: grow;
+  animation-duration: 0.5s;
+  transform: scale(1.05);
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.offer-box-text {
+  font-size: 24px;
+  padding-bottom: 0;
+}
+.new {
+  margin-top: 0;
+}
+.offer-box-circle {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background-color: #e07a64;
+  border-radius: 50%;
+  top: -4%;
+  left: -4%;
+}
+
+footer {
+  height: 71px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e4e4e;
+  color: white;
+}
+
+.evenly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e4e4e;
+  color: white;
+}
+.footer-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+.icons {
+  font-size: 18px;
+  display: flex;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.fa-instagram {
+  margin-right: 18px;
+}
